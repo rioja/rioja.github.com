@@ -245,8 +245,12 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
 
-#######
+########################################################
 
 extensions = [ "sphinxtogithub" ]
 sphinx_to_github = True
 sphinx_to_github_verbose = True
+#
+import sphinx_jquibs
+html_theme = 'bootstrap'
+html_theme_path = sphinx_jquibs.get_html_theme_path()
